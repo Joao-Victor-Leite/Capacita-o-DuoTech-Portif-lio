@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    color:#fff;
+}
+
+.my-port-container {
+    background-color: rgb(22, 22, 22);
+    border: 0.5px, solid, #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin-left: 2em;
+}
+
+h1 {
+    margin: 1rem;
+    text-align: center;
+    font-size: 4.5em;
+}
+
+#home {
+    
+    text-align: center;
+    margin: 3em;
+}
+
+#home h1{
+    font-size: 4em;
+}
+
+ul {
+    display: flex;
+    margin: 2rem;
+    gap: 40px;
+}
+
+a, a:hover, a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 3em;
+}
+
+li {
+    list-style-type: none;
+    color: #fff;
+    padding-left: 1rem;
+}
+
+.contato {
+    display: flex;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 1em;
+}
+
+#my_icon {
+    border-radius: 25%;
+    width: 25em;
+    height: 25em;
+}
+
+#sobre p {
+    text-align: justify;
+    font-size: 15px;
+    margin-right: 25rem;
+}
+
+#sobre h2 {
+    font-size: 3em;
+}
+
