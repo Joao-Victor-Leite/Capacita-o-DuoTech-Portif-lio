@@ -27,13 +27,12 @@ header h2 {
 }
 
 h1 {
-    margin: 1rem;
+    margin: 0.5rem;
     text-align: center;
     font-size: 4.5em;
 }
 
 #home {
-    
     text-align: center;
     margin: 3em;
 }
@@ -67,17 +66,14 @@ li {
     padding-left: 1rem;
 }
 
-.contato {
-    display: flex;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: 1em;
-}
-
 #my_icon {
     border-radius: 25%;
     width: 25em;
     height: 25em;
+}
+
+#sobre h2 {
+    font-size: 3em;
 }
 
 #sobre p {
@@ -86,7 +82,50 @@ li {
     margin-right: 25rem;
 }
 
-#sobre h2 {
+#project-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#project-container h2 {
     font-size: 3em;
 }
 
+.project-img {
+    border-radius: 5%;
+    width: 50em;
+}
+
+#contato {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+
+#contact_box {
+    display: flex;
+    flex-direction: column;
+}
+
+#input1 {
+    align-items: flex-start;
+}
+
+#contact_button {
+    align-items: center;
+    height: 30px;
+    width: 55px;
+    margin-top: 0.7em;
+    margin-left: 45%;
+}
+
+#consideracao {
+    display: flex;
+    justify-content: center;
+}
