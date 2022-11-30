@@ -1,131 +1,89 @@
+:root {
+    --bg-main-color:#242424;
+    --bg-sidebar-color:#161616;
+    --border-sidebar-color:#db8017af;
+    --text-color:#fff;
+    --li-nav-active-color:#eb8613;
+    --left-section-and-body: 15em;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-}
-
-body {
-    background-color: rgb(36, 36, 36);
-    color:#fff;
-}
-
-.my-port-container {
-    background-color: rgb(22, 22, 22);
-    border: 0.5px, solid, #fff;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header h2 {
-    margin-left: 2em;
-}
-
-h1 {
-    margin: 0.5rem;
-    text-align: center;
-    font-size: 4.5em;
-}
-
-#home {
-    text-align: center;
-    margin: 3em;
-}
-
-#home h1{
-    font-size: 4em;
-}
-
-ul {
-    display: flex;
-    margin: 2rem;
-    gap: 40px;
-}
-
-a, a:hover, a:visited {
-    color: unset;
+    outline: none;
     text-decoration: none;
 }
 
-.conteudo-principal {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    margin-left: 3em;
+body {
+    color: var(--text-color);
+    background: var(--bg-main-color);
+    min-height: 100vh;
+    font-size: 1em;
 }
 
-li {
-    list-style-type: none;
-    color: #fff;
-    padding-left: 1rem;
+/*===== Sidebar Start =====*/
+ul {
+    list-style: none;
 }
 
-#my_icon {
-    border-radius: 25%;
-    width: 25em;
-    height: 25em;
-}
-
-#sobre h2 {
-    font-size: 3em;
-}
-
-#sobre p {
-    text-align: justify;
-    font-size: 15px;
-    margin-right: 25rem;
-}
-
-#project-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
-#project-container h2 {
-    font-size: 3em;
-}
-
-.project-img {
-    border-radius: 5%;
-    width: 50em;
-}
-
-#contato {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    margin-left: 6em;
-    margin-right: 6em;
-}
-
-#contact_box {
-    display: flex;
-    flex-direction: column;
-}
-
-#input1 {
-    align-items: flex-start;
-}
-
-#contact_button {
-    align-items: center;
-    height: 30px;
-    width: 55px;
-    margin-top: 0.7em;
-    margin-left: 45%;
-}
-
-#consideracao {
+.sidebar {
+    width: 15em;
+    height: 100vh;
+    background: var(--bg-sidebar-color);
+    border-right: 0.1em solid var(--li-nav-active-color);
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    padding: 5%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.sidebar h1{
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    top: 13%;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    margin-bottom: 60%;
+    display: block;
+    font-weight: 600;
+    padding: 0.4em;
+    border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+nav ul li a.active {
+    color:var(--li-nav-active-color);
+}
+/*===== Sidebar End =====*/
+/*obs: fazer o botao de opções da sidebar no mobile*/
+
+/*===== Home Section Start =====*/
+section {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--left-section-and-body);
+    z-index: 0;
+}
+
+.container {
+    /*max-width a verificar*/
+    width: 100vh;
+    margin: auto;
+}
+
+#my-photo {
+    height: 20em;
+}
+
+
+/*===== Home Section End =====*/
