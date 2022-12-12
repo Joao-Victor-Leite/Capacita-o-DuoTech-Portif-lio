@@ -48,6 +48,7 @@ ul {
     text-transform: capitalize;
     font-size: 1.5em;
     top: 13%;
+    padding: 1em;
 }
 
 nav ul li a {
@@ -79,11 +80,39 @@ section {
     /*max-width a verificar*/
     width: 100vh;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    padding-top: 5%;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+} 
 #my-photo {
     height: 20em;
+    border-radius: 7%;
 }
 
+.home-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.home-info {
+    text-align: justify;
+}
+
+.hello {
+    margin-bottom: 5%;
+}
+
+.home-info p {
+    font-size: 0.9em;
+}
 
 /*===== Home Section End =====*/
